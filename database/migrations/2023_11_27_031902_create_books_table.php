@@ -25,7 +25,7 @@ class CreateBooksTable extends Migration
             $table->smallInteger('series_placement')
                 ->nullable()
                 ->comment('Required if it is a part of a series.');
-            $table->string('published_year', 25);
+            $table->string('published_year', 10);
             $table->string('isbn', 20)
                 ->nullable();
             $table->json('subject_tracings')

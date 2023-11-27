@@ -28,7 +28,7 @@ class CreateEditionsTable extends Migration
                 ->nullable();
             $table->bigInteger('fk_publishers');
             $table->json('publishing_details')
-                ->comment('JSON Keys include: city published (array), copyright years (array), and ublished years (array).');
+                ->comment('JSON Keys include: city published (array), copyright years (array), and published years (array).');
             $table->json('additional_notes')
                 ->comment('JSON Keys include: edition descriptions, inclusions, and type of work (e.g. Italian political treatise).');
             $table->string('hs_code', 100)
